@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Register for ShambaSmart</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f9c806",
+              "background-light": "#f8f8f5",
+              "background-dark": "#231f0f",
+            },
+            fontFamily: {
+              display: ["Be Vietnam Pro"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .farm-illustration-bg {
+        background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M 10 10 C 20 20, 40 20, 50 10" stroke="%2338a169" fill="none" stroke-width="2" stroke-linecap="round"/><path d="M 30 30 C 40 40, 60 40, 70 30" stroke="%2338a169" fill="none" stroke-width="2" stroke-linecap="round"/><path d="M 50 50 C 60 60, 80 60, 90 50" stroke="%2338a169" fill="none" stroke-width="2" stroke-linecap="round"/><path d="M 70 70 C 80 80, 100 80, 110 70" stroke="%2338a169" fill="none" stroke-width="2" stroke-linecap="round"/><path d="M -10 90 C 0 100, 20 100, 30 90" stroke="%2338a169" fill="none" stroke-width="2" stroke-linecap="round"/></svg>');
+        background-size: 800px;
+        background-repeat: repeat;
+        background-position: center;
+        opacity: 0.1;
+      }
+      .dark .farm-illustration-bg {
+        opacity: 0.05;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200 antialiased">
+<div class="relative min-h-screen">
+<div class="absolute inset-0 farm-illustration-bg z-0"></div>
+<div class="relative z-10 flex flex-col min-h-screen">
+<header class="border-b border-primary/20 dark:border-primary/20">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 16.5v-3.5c0-.28.22-.5.5-.5h1c.28 0 .5.22.5.5v3.5c0 .28-.22.5-.5.5h-1c-.28 0-.5-.22-.5-.5zM7.5 13H9c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5H7.5c-.28 0-.5.22-.5.5v1c0 .28.22.5.5.5zm8 0h1.5c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5H15.5c-.28 0-.5.22-.5.5v1c0 .28.22.5.5.5zm-4-6.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z"></path>
+</svg>
+<h1 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">ShambaSmart</h1>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Learn</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Marketplace</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Community</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="px-4 py-2 rounded text-sm font-semibold bg-green-600 hover:bg-green-700 text-white transition-colors" href="#">Sign In</a>
+<button class="md:hidden">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-8 rounded-xl border border-primary/20">
+<div>
+<h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Create your ShambaSmart account</h2>
+<p class="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">Join a community of modern farmers.</p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="space-y-4 rounded shadow-sm">
+<div>
+<label class="sr-only" for="full-name">Full Name</label>
+<input class="relative block w-full appearance-none rounded border border-primary/20 bg-background-light dark:bg-background-dark/50 px-3 py-3 placeholder-gray-500 dark:placeholder-gray-400 focus:z-10 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm" id="full-name" name="name" placeholder="Full Name" required="" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="email-address">Email address</label>
+<input autocomplete="email" class="relative block w-full appearance-none rounded border border-primary/20 bg-background-light dark:bg-background-dark/50 px-3 py-3 placeholder-gray-500 dark:placeholder-gray-400 focus:z-10 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm" id="email-address" name="email" placeholder="Email address" required="" type="email"/>
+</div>
+<div>
+<label class="sr-only" for="password">Password</label>
+<input autocomplete="current-password" class="relative block w-full appearance-none rounded border border-primary/20 bg-background-light dark:bg-background-dark/50 px-3 py-3 placeholder-gray-500 dark:placeholder-gray-400 focus:z-10 focus:border-primary focus:outline-none focus:ring-primary sm:text-sm" id="password" name="password" placeholder="Password" required="" type="password"/>
+</div>
+</div>
+<div>
+<span class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">I am a...</span>
+<div class="grid grid-cols-3 gap-3">
+<label class="relative flex cursor-pointer items-center justify-center rounded-lg border border-primary/20 p-3 text-sm font-medium focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:bg-primary/10 has-[:checked]:border-primary has-[:checked]:bg-primary/20 dark:hover:bg-primary/20">
+<input class="sr-only" name="user-type" type="radio" value="farmer"/>
+<span class="text-gray-800 dark:text-gray-200">Farmer</span>
+</label>
+<label class="relative flex cursor-pointer items-center justify-center rounded-lg border border-primary/20 p-3 text-sm font-medium focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:bg-primary/10 has-[:checked]:border-primary has-[:checked]:bg-primary/20 dark:hover:bg-primary/20">
+<input class="sr-only" name="user-type" type="radio" value="student"/>
+<span class="text-gray-800 dark:text-gray-200">Student</span>
+</label>
+<label class="relative flex cursor-pointer items-center justify-center rounded-lg border border-primary/20 p-3 text-sm font-medium focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:bg-primary/10 has-[:checked]:border-primary has-[:checked]:bg-primary/20 dark:hover:bg-primary/20">
+<input class="sr-only" name="user-type" type="radio" value="enthusiast"/>
+<span class="text-gray-800 dark:text-gray-200">Enthusiast</span>
+</label>
+</div>
+</div>
+<div>
+<button class="group relative flex w-full justify-center rounded-lg border border-transparent bg-primary px-4 py-3 text-sm font-semibold text-gray-900 hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background-light dark:focus:ring-offset-background-dark transition-colors" type="submit">
+                  Register
+                </button>
+</div>
+</form>
+<div class="text-center text-sm">
+<a class="font-medium text-green-600 hover:text-green-500" href="#"> Already have an account? Sign in </a>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/20">
+<div class="container mx-auto py-6 px-6 text-center text-gray-500 dark:text-gray-400">
+<div class="flex justify-center space-x-6 mb-4">
+<a class="hover:text-primary transition-colors text-sm" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a>
+</div>
+<p class="text-sm">© 2024 ShambaSmart. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>

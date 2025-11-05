@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ShambaSmart Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d46211",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-background-light dark:bg-background-dark flex flex-col p-4 border-r border-primary/20 dark:border-primary/30">
+<div class="flex items-center gap-3 mb-8">
+<img alt="User profile picture" class="w-12 h-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0fFPmPy7aeyy0IuizJYh3on87sJxUvlovgziBIcxLAITtj_kotiuNKkBK7z5aTPhjqjuP7m7bbUkSvD1mO7DpjLGNkFdA-M5gDyLO58ez3T29TQ8NPVlqWXrnpstCQr3n-OY8vxfiFx1bi0DnoamsCjES05SELpF8dVeGXZKh5YAXcBp6H4HGR9iF-F_iuxOv2A-I9xYtZxY-jPKPEF4yVnnjZz296TumrIr5q7uKzoEKRT8hGHnQjPE7P87WEqmyIgwJ3qen__4"/>
+<div>
+<h2 class="font-bold text-lg text-stone-900 dark:text-stone-100">Kiprono</h2>
+<p class="text-sm text-stone-600 dark:text-stone-400">Nairobi, Kenya</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary font-bold" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 text-stone-700 dark:text-stone-300" href="#">
+<span class="material-symbols-outlined">book_4</span>
+<span>Guides</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 text-stone-700 dark:text-stone-300" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span>Prices</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-primary/10 dark:hover:bg-primary/20 text-stone-700 dark:text-stone-300" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+</aside>
+<main class="flex-1 p-8">
+<h1 class="text-3xl font-bold text-stone-900 dark:text-stone-100 mb-6">My ShambaSmart</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+<div class="bg-primary/10 dark:bg-primary/20 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary">auto_stories</span>
+<div>
+<h3 class="font-bold text-xl text-stone-900 dark:text-stone-100">My Guides</h3>
+<p class="text-stone-600 dark:text-stone-400">Your saved farming guides</p>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary">quiz</span>
+<div>
+<h3 class="font-bold text-xl text-stone-900 dark:text-stone-100">My Questions</h3>
+<p class="text-stone-600 dark:text-stone-400">Questions you've asked</p>
+</div>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-6 rounded-xl flex items-center gap-4 hover:shadow-lg transition-shadow">
+<span class="material-symbols-outlined text-4xl text-primary">groups</span>
+<div>
+<h3 class="font-bold text-xl text-stone-900 dark:text-stone-100">My Stories</h3>
+<p class="text-stone-600 dark:text-stone-400">Share your farming journey</p>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-stone-900 dark:text-stone-100 mb-4">Notifications</h2>
+<div class="space-y-4">
+<div class="bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary text-white p-3 rounded-full">
+<span class="material-symbols-outlined">forum</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold text-stone-800 dark:text-stone-200">Forum Reply</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Your question in the forum received a new reply.</p>
+</div>
+<span class="text-xs text-stone-500 dark:text-stone-500">5m ago</span>
+</div>
+<div class="bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 p-4 rounded-lg flex items-center gap-4">
+<div class="bg-primary text-white p-3 rounded-full">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div class="flex-grow">
+<p class="font-bold text-stone-800 dark:text-stone-200">Price Update</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">The price of maize has increased by 5%.</p>
+</div>
+<span class="text-xs text-stone-500 dark:text-stone-500">1h ago</span>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
